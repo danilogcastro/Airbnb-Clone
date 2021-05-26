@@ -1,5 +1,5 @@
 </div>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @flat.picture_url %>);">
 
 </div>
 <div class="container">
@@ -33,7 +33,6 @@
         <h4>Book this place!</h4>
         <%= simple_form_for(@flat) do |f| %>
           <%= f.input :name %>
-          <%= f.input :address %>
           <%= f.button :submit, 'Book', class: 'btn btn-info' %>
         <% end %>
 

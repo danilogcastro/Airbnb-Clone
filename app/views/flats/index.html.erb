@@ -3,7 +3,7 @@
 <div class="row justify-content-center">
   <% @flats.each do |flat| %>
     <div class="card-trip col-3 m-2">
-      <img src=<%="https://source.unsplash.com/collection/#{rand(1000000..10000000)}"%>/>
+      <img src=<%="#{flat.picture_url}"%>/>
       <div class="card-trip-infos">
         <%= link_to flat_path(flat) do %>
           <div>
