@@ -11,8 +11,16 @@
             <p><%= flat.address %></p>
           </div>
         <% end %>
-        <h2 class="card-trip-pricing">€ <%= flat.price_per_night %></h2>
-        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        <div class="details ms-2 mb-2">
+          <div class="guests d-flex">
+            <i class="fas fa-user-friends me-1 mb-2"></i>
+            <h3><%= flat.number_of_guests %></h3>
+          </div>
+          <div class="price d-flex">
+            <i class="fas fa-euro-sign me-1"></i>
+            <h3 class="card-trip-pricing"><%= flat.price_per_night %></h3>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
