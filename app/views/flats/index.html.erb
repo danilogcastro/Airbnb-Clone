@@ -5,10 +5,12 @@
     <div class="card-trip col-3 m-2">
       <img src=<%="https://source.unsplash.com/collection/#{rand(1000000..10000000)}"%>/>
       <div class="card-trip-infos">
-        <div>
-          <h2><%= flat.name %></h2>
-          <p><%= flat.address %></p>
-        </div>
+        <%= link_to flat_path(flat) do %>
+          <div>
+            <h2><%= flat.name %></h2>
+            <p><%= flat.address %></p>
+          </div>
+        <% end %>
         <h2 class="card-trip-pricing">€ <%= flat.price_per_night %></h2>
         <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
       </div>
