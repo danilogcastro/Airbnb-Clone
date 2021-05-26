@@ -10,5 +10,9 @@
 
 <div class="details">
   <h2>Details</h2>
-  <p><span class="guests mx-2"><i class="fas fa-user me-1"></i><%= @flat.number_of_guests %></span><span class="price"><i class="fas fa-euro-sign me-1"></i><%= @flat.price_per_night %></span></p>
+  <p><span class="guests mx-2"><i class="fas fa-user-friends me-1"></i><%= @flat.number_of_guests %></span><span class="price"><i class="fas fa-euro-sign me-1"></i><%= @flat.price_per_night %></span></p>
 </div>
+
+<%= link_to edit_flat_path, class: "btn btn-success" do %>
+  Edit Flat
+<% end %>
