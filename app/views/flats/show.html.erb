@@ -16,3 +16,10 @@
 <%= link_to edit_flat_path, class: "btn btn-success" do %>
   Edit Flat
 <% end %>
+
+<%= link_to flat_path(@flat),
+            method: :delete,
+            data: { confirm: "Are you sure you want to remove this flat?" },
+            class: "btn btn-danger" do  %>
+  Delete Flat
+<% end %>
